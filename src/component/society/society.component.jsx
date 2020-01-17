@@ -2,7 +2,7 @@ import React from 'react';
 import './society.style.css'
 
 const Society = ({societyName,imageUrl,size})=>(
-    <div className={`${size} menu-item`}>
+    <div className={`${size} society`}>
         <div 
             className='background-image'
             style={
@@ -10,8 +10,7 @@ const Society = ({societyName,imageUrl,size})=>(
             }
         />
         <div className='content'>
-            <h1 className='title'>{societyName.toUpperCase()}</h1>
-            <span className='subtitle'>Shop Now</span>
+            <h1 className='societyName'>{societyName.toUpperCase()}</h1>
         </div>
     </div>
 );
