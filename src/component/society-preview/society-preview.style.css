@@ -1,7 +1,7 @@
 .society-preview {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 1%;
   }
 .society-preview .society {
     font-size: 28px;
@@ -17,10 +17,11 @@
   text-align: center;
   border-spacing: 5px;
   border-spacing: 5px;
+  box-sizing: border-box;
 }
 .list-item{
   width: 33%;
-  padding: 15px;
+  padding: 1%;
   border-bottom: 1px solid #ddd;
 }
 .list  {

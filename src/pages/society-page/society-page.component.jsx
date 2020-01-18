@@ -15,7 +15,7 @@ class SocietyPage extends React.Component{
     render(){
         const {collections}=this.state;
         return (
-            <div className='Society-page'>
+            <div className='society-page'>
             {
                 collections.map(({id,...otherCollectionProps}) =>(
                     <SocietyPreview key={id} {...otherCollectionProps} />
