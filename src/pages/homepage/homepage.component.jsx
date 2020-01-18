@@ -3,7 +3,11 @@ import './homepage.style.css';
 import Directory from '../../component/directory/directory.component';
 
 const HomePage = () =>(
-    <Directory />
+	<div className='parking'>
+		<h1>The Parking Spot</h1>
+		<Directory />
+	</div>
+    
 );
 export default HomePage;
      
