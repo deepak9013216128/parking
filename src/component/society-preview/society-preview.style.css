@@ -1,0 +1,39 @@
+.society-preview {
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+  }
+.society-preview .society {
+    font-size: 28px;
+    margin-bottom: 25px;
+  }
+.society-preview .preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+.list{
+  width: 100%;
+  text-align: center;
+  border-spacing: 5px;
+  border-spacing: 5px;
+}
+.list-item{
+  width: 33%;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+}
+.list  {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+.list-items:hover {
+  background-color: #e1e1e1;
+}
+
+.list-title {
+  color: white;
+  background-color: #56E56C;
+}
+tr:nth-child(even) {background-color: #f2f2f2;}
