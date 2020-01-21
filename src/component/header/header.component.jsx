@@ -7,12 +7,13 @@ import './header.style.css';
 const Header = ({currentUser}) =>(
     <div className='header'>
         <Link  className='logo-container' to='/' >
-        <Logo className='logo' />
-        	<i className="fas fa-car"></i>
+            <Logo className='logo' />
+        	<i className="fas fa-car logo">The Strom Breaker</i>
+
         </Link>
         <div className='options'>
-            <Link className='option' to='/society' >SOCIETY</Link>
-            <Link className='option' to='/society' >CONTACT</Link>
+            <Link className='option' to='/society/0' >SOCIETY</Link>
+            <Link className='option' to='/society/0' >CONTACT</Link>
             {
                 currentUser ?(
                     <div className='option'>

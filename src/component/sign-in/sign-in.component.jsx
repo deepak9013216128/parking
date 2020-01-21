@@ -8,6 +8,8 @@ import CustomButton from '../custom-button/custom-button.component';
 
 import {SignInWithGoogle} from '../../firebase/firebase.utils';
 
+import {auth, createUserProfileDocument} from '../../firebase/firebase.utils';
+
 class SignIn extends React.Component{
     constructor(props){
         super(props);
@@ -17,9 +19,22 @@ class SignIn extends React.Component{
         }
     }
 
-    handleSubmit = (event) => {
+    handleSubmit = async (event) => {
         event.preventDefault();
-        this.setState({email:'',password:''})
+        // this.setState({email:'',password:''})
+        const {email,password} = this.state;
+        console.log(email,password)
+        try{
+            const {user} = await auth.signInWithEmailAndPassword(email,password)
+            await createUserProfileDocument(user)
+            this.setState({
+                email: '',
+                password: ''
+            })
+        }
+        catch(error){
+            console.error(error)
+        }
     }
 
     handleChange = (event) => {

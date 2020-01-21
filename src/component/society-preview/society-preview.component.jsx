@@ -10,6 +10,7 @@ const SocietyPreview = ({societyName,residents})=>(
                 <thead className='list-title'>
                     <tr >
                         <th className='list-item'>Resident Name</th>
+                        <th className='list-item'>Flat No.</th>
                         <th className='list-item'>Phone No</th>
                         <th className='list-item'>Vechile No. plate</th>
                     </tr>
@@ -21,7 +22,6 @@ const SocietyPreview = ({societyName,residents})=>(
                             <tbody>
                             {
                                 residents
-                                .filter((resident,index)=> index < 4 )
                                 .map(({id, ...otherItemProps}) =>(
                                     <SocietyResident key={id}{...otherItemProps} />
                                 ))

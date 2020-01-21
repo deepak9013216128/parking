@@ -3,8 +3,9 @@ import {withRouter,Link} from 'react-router-dom';
 import './society.style.css'
 
 const Society = ({societyName,imageUrl,size,history,linkUrl,match})=>(
-    <div className={`${size} society`}
+    <div className={`${size} society`} 
         onClick={()=>(history.push(`${match.url}${linkUrl}`))}
+    
     >
         <div 
             className='background-image'

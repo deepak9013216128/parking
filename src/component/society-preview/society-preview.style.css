@@ -20,7 +20,7 @@
   box-sizing: border-box;
 }
 .list-item{
-  width: 33%;
+  width: 25%;
   padding: 1%;
   border-bottom: 1px solid #ddd;
 }
