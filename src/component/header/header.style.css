@@ -5,6 +5,7 @@
   justify-content: space-between;
   margin-bottom: 25px;
   background-color: #d5f4e6;
+  font-size: 0.1rem;
 }
 .header .logo-container .logo{
   width: 50%;
@@ -27,6 +28,6 @@
 }
 .header .options .option {
   display: flex;
-  min-width: 10%;
+  min-width: 15%;
   padding: 1% 2%;
 }

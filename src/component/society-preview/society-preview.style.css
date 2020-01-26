@@ -7,19 +7,19 @@
   display: flex;
   justify-content: space-between;
   border-bottom: 1px solid black;
+  font-size: 0.1rem;
   margin-bottom: 20px;
 }
 .society-preview .societyName {
   width: 40%;
   color: black;
-  font-size: 150%;
+  font-size: 1rem;
   display: flex;
   justify-content: center;
 }
 .society-preview .society-detail {
   color: gray;
   width: 15%;
-  font-size: 10%;
   justify-content: center;
   margin: auto;
   cursor: pointer;
@@ -37,6 +37,7 @@
 .list{
   width: 100%;
   text-align: center;
+  font-size: 0.1rem;
   border-spacing: 5px;
   border-spacing: 5px;
   box-sizing: border-box;
