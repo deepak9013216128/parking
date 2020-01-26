@@ -33,6 +33,7 @@ class SignIn extends React.Component{
             })
         }
         catch(error){
+            alert(error.message)
             console.error(error)
         }
     }
@@ -67,7 +68,7 @@ class SignIn extends React.Component{
                     />
                     <div className='buttons'>
                         <CustomButton type='submit' >Sign In</CustomButton>
-                        <CustomButton type='submit' onClick={SignInWithGoogle} isGoogleSignIn>
+                        <CustomButton onClick={SignInWithGoogle} isGoogleSignIn>
                           Sign In With Google
                         </CustomButton>
                     </div>

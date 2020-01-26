@@ -1,7 +1,7 @@
 import React from 'react';
-import {society,database} from '../../firebase/firebase.utils';
+import {database} from '../../firebase/firebase.utils';
 
-import SOCIETY_DATA from './society-page.data';
+// import SOCIETY_DATA from './society-page.data';
 import './society-page.style.css'
 
 import SocietyPreview from '../../component/society-preview/society-preview.component';
@@ -34,7 +34,8 @@ class SocietyPage extends React.Component{
             {
                 collections.map(({id,...otherCollectionProps}) =>{
                     if(parseInt(data) === parseInt(id) || parseInt(data) === 0)
-                    return <SocietyPreview key={id} {...otherCollectionProps}  />  
+                    return <SocietyPreview key={id} {...otherCollectionProps} />
+                    return null;  
                 })
             }
             </div>

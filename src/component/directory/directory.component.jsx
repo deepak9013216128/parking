@@ -2,7 +2,7 @@ import React from 'react';
 import Society from '../society/society.component';
 import './directory.style.css';
 
-import Data from './directory.data';
+// import Data from './directory.data';
 import {database} from '../../firebase/firebase.utils'
 
 
